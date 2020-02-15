@@ -33,13 +33,13 @@ function getCookie(cname) {
  * @param {boolean} parse Parse the response to JS object
  * @param {boolean} callapi Call an api endpoint
  */
-function connectAPI(endpoint, method, fn, obj = null, parse = true, callapi = true) {
-  var location = "";
+function connectAPI(endpoint, method, fn, obj = null, parse = true, callapi = false) {
+  var location = "https://gutenberg.justamouse.com/";
   if (callapi) {
-    location = "{0}/api/{1}".format(document.location.origin, endpoint);
+    location = "{0}/api/{1}".format(location, endpoint);
   }
   else {
-    location = "{0}/{1}".format(document.location.origin, endpoint)
+    location = "{0}/{1}".format(location, endpoint)
   }
 
   var http_request = new XMLHttpRequest();

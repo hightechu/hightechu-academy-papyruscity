@@ -3,25 +3,26 @@ function createAccount() {
   // If the response has an error -> inform user
   // Else is successful -> inform user
   responseStatus = function (response, status) {
-    if ('error' in response) {
+    if (response.metadata.author == null) {
       // Inform User of Error
-      console.log("{0}: {1}".format(status, response.error.message));
+      console.log("error");
     }
     else {
       // Account Created Successfully
-      console.log("Account created successfully!");
+      console.log("Request Succesful");
       // Redirect User to Homepage
-      window.location = "/";
+      document.getElementById("dataFromAPI").innerHTML = response.metadata.title;
     }
   }
 
+  
   // Grab data from login-register page
   var jsonObj = new Object();
-  jsonObj.email = document.getElementById("emailRegister").value;
+  jsonObj.id = document.getElementById("bookID").value;
   jsonObj.password = document.getElementById("passwordRegister").value;
 
   // Connect to the API
-  connectAPI("users", "POST", responseStatus, jsonObj);
+  connectAPI("texts/{0}".format(jsonObj.id), "GET", responseStatus);
 }
 
 // login
@@ -48,7 +49,7 @@ function login() {
 
   // Grab data from login-register page
   var jsonObj = new Object();
-  jsonObj.email = document.getElementById("emailLogin").value;
+  jsonObj.id = document.getElementById("bookID").value;
   jsonObj.password = document.getElementById("passwordLogin").value;
 
   // Connect to the API
