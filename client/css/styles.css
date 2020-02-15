@@ -1,1 +1,22 @@
 /* Add Styles Here */
+.centre {
+    margin:auto;
+    text-align: center;
+}
+td {
+    padding:100px;
+}
+.right {
+    float: right;
+    border: 3px solid #73AD21;
+    padding: 10px;
+  }
+  .left {
+    float: left;
+    border: 3px solid #73AD21;
+    padding: 10px;
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: aqua;
+  }
