@@ -18,7 +18,7 @@ function searchID() {
   
   // Grab data from search page
   var jsonObj = new Object();
-  //jsonObj.id = document.getElementById("bookID").value;
+  jsonObj.id = document.getElementById("bookID").value;
   
 
   // Connect to the API
@@ -30,13 +30,13 @@ function search() {
   // If the response has an error -> inform user
   // Else is successful -> inform user
   responseStatus = function (response, status) {
-    if (response.texts == null) {
+    if (response.texts[0] == undefined) {
       // Inform User of Error
-      console.log("error");
+      console.log(response.texts[0]);
     }
     else {
       // Account Created Successfully
-      console.log("Request Succesful");
+      console.log(response.texts[0]);
       // Redirect User to Homepage
       document.getElementById("dataFromAPI").innerHTML = response.texts;
   }
@@ -47,5 +47,5 @@ function search() {
   jsonObj1.search = document.getElementById("searchTerm").value;
 
   // Connect to the API
-  connectAPI("search/title eq {0}?include=author,language,rights,title,subject".format(jsonObj1.id), "GET", responseStatus);
+  connectAPI("search/title eq {0}?include=author,language,rights,title,subject".format(jsonObj1.search), "GET", responseStatus);
 }
