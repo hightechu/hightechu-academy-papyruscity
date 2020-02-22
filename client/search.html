@@ -1,0 +1,52 @@
+<!-- TELLS THE BROSWER -->
+<!doctype html>
+<!-- ENGLISH -->
+<html lang="en">
+  <!-- HEAD -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ADD TITLE -->
+    <title></title>
+    <!-- ADD DESCRIPTION -->
+    <meta name="description" content="">
+    <!-- ADD AUTHOR -->
+    <meta name="author" content="">
+    <!-- ADD CSS FILES HERE -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- ADD FAVICON -->
+    <!-- Learn more about favicons here: https://en.wikipedia.org/wiki/Favicon -->
+  </head>
+  <!-- BODY -->
+  <body>
+    <!-- ADD CONTENT HERE -->
+    <main>
+      <!-- Search -->
+      <span id="dataFromAPI"></span>
+      <section>
+        <h2>Search</h2>
+        <p>Search for a book</p>
+        <div>
+          <!-- Id search 
+          <label for="bookID">BookID</label>
+          <input id="bookID" type="number" placeholder="Enter Book ID" name="bookID" required>
+          <button type="search" onclick="searchID()">Search</button> -->
+
+          <br>
+          <br>
+          <!-- Term search -->
+          <label for="searchTerm">Search</label>
+          <input id="searchTerm" type="search" placeholder="Search" name="searchTerm" required>
+      
+          <button type="search" onclick="search()">Search</button> 
+        </div>
+      </section>
+
+    <!-- JAVASCRIPT SCRIPT -->
+    <!-- ADD JS FILES HERE -->
+    <script src="js/helper.js"></script> <!-- Loopback JavaScript Helper-->
+    <script src="js/search.js"></script>
+  </body>
+</html>
