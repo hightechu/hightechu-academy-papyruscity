@@ -1,22 +1,55 @@
 /* Add Styles Here */
 .centre {
-    margin:auto;
-    text-align: center;
+  margin:auto;
+  text-align: center;
 }
 td {
-    padding:100px;
+  padding:100px;
+  padding-top: 10px;
+  padding-bottom: 50px;
 }
 .right {
-    float: right;
-    border: 3px solid #73AD21;
-    padding: 10px;
-  }
-  .left {
-    float: left;
-    border: 3px solid #73AD21;
-    padding: 10px;
-  }
-  .topnav {
-    overflow: hidden;
-    background-color: aqua;
-  }
+  float: right;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+.left {
+  float: left;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+.topnav {
+  overflow: hidden;
+  background-color: rgba(9,162,224,0.88);
+}
+.synopsisscroll {
+  overflow: scroll;
+  width: 20vw;
+  height: 30vh;
+  border: 1px solid black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+.reviewbox {
+  overflow: scroll;
+  width: 75vw;
+  height: 33.3vh;
+  font-family: Verdana;
+  border: 1px solid black;
+  padding: 0;
+  margin: 0;
+}
+.inlineReview {
+  height: 100vh;
+  align-items: flex-start;
+  display: inline-block;
+  overflow: hidden;
+}
+.scrollReview {
+  overflow: scroll;
+}
+.bookCover {
+  width: 20vw;
+  height: 65vh;
+}
