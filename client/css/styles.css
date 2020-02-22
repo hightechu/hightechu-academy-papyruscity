@@ -7,20 +7,25 @@ td {
   padding:100px;
   padding-top: 10px;
   padding-bottom: 50px;
+  font-family: 'Lucida Sans';
 }
 .right {
-  float: right;
-  border: 3px solid #73AD21;
+  align-self: right;
   padding: 10px;
 }
 .left {
   float: left;
-  border: 3px solid #73AD21;
   padding: 10px;
 }
 .topnav {
+  height: 12vh;
+  display: flex;
+  align-items: center;
   overflow: hidden;
   background-color: rgba(9,162,224,0.88);
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .synopsisscroll {
   overflow: scroll;
