@@ -30,16 +30,17 @@ function search() {
   // If the response has an error -> inform user
   // Else is successful -> inform user
   responseStatus = function (response, status) {
-    if (Array.isArray(response.texts) && response.texts.length) {
+    if (Array.isArray(response.texts) && response.texts.length == 0) {
       // Inform User of Error
-      console.log(console.error();
-      );
+      console.log("Invalid Search")
+      document.getElementById("searchTerm").innerHTML
     }
     else {
       // Account Created Successfully
       console.log(response.texts[1]);
       // Redirect User to Homepage
-      document.getElementById("dataFromAPI").innerHTML = response.texts[0];
+      document.getElementById("dataFromAPI").innerHTML = response.texts[0].author;
+      document.getElementById("dataFromAPI").innerHTML = response.texts[0].language;
   }
 }
 
