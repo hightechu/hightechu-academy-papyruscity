@@ -1,0 +1,53 @@
+/* Add Styles Here */
+body {background-color: orangered;}
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 70px;
+}
+h2 {
+    text-align: center;
+    font-style: italic;
+    font-size: 50px;
+}
+textarea {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 400px;
+    height: 100px;
+    font-size: 30px;
+}
+#Submit {
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+h3 {
+    text-align: center;
+    font-size: 40px;
+}
+#Yes {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    font-size: 75px;
+}
+#No {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    font-size: 75px;
+}
+h4 {
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+}
