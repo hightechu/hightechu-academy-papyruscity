@@ -1,4 +1,5 @@
-// createAccount
+// Book Id search
+
 function searchID() {
   // If the response has an error -> inform user
   // Else is successful -> inform user
@@ -62,3 +63,29 @@ function search() {
   // Connect to the API
   connectAPI("search/title eq {0}?include=author,language,rights,title,subject".format(jsonObj1.search), "GET", responseStatus);
 }
+
+// Term search
+function searchTerm() {
+    // If the response has an error -> inform user
+    // Else is successful -> inform user
+    responseStatus = function(response, status) {
+        if (response == null) {
+            // Inform User of Error
+            console.log("error");
+        } else {
+            // Account Created Successfully
+            console.log("Request Succesful");
+            // Redirect User to Homepage
+            document.getElementById("dataFromAPI").innerHTML = response;
+        }
+    }
+  
+  
+    // Grab data from search page
+    var jsonObj2 = new Object();
+    jsonObj2.id = document.getElementById("searchTerm").value;
+  
+  
+    // Connect to the API
+    connectGutendex("topic={0}".format(jsonObj2.id),"GET", responseStatus);
+  }
