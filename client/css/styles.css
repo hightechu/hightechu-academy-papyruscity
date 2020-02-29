@@ -52,6 +52,12 @@ td {
   display: inline-block;
   overflow: hidden;
 }
+.inlineUserPage {
+  height: 50vh;
+  align-items: flex-start;
+  display: inline-block;
+  overflow: hidden;
+}
 .scrollReview {
   overflow: scroll;
 }
@@ -79,4 +85,10 @@ td {
   z-index: 1030;
   overflow-x: scroll;
   background-color: rgba(9,162,224,0.88);
+}
+.userPageInput {
+  width: 200px;
+  height: 4vh;
+  overflow: hidden;
+  margin: 10px;
 }
