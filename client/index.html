@@ -3,6 +3,7 @@
 <!-- ENGLISH -->
 <html lang="en">
 	<!-- HEAD -->
+	<!--this head is basically a tutorial-->
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,17 +23,23 @@
 	</head>
 	<!-- BODY -->
 	<body onload="getUserData()">
+		<!--top navigation-->
 		<div class = "row; topnav">
 			<div class="col-sm-9" style = "font-size: 25px;">Guys We Really Do Need a Name</div>
 			<div class = "col-sm-2"><button>Login/Sign-Up</button></div>
-			<div class = "col-sm-1" style="align-self: right;margin-top: 0;"><button><img src = "https://cdn2.iconfinder.com/data/icons/people-80/96/Picture1-512.png" width = 60px></button></div>
+			<div class = "col-sm-1" style="align-self: right;margin-top: 0;"><a href="user-page.html"><img src = "https://cdn2.iconfinder.com/data/icons/people-80/96/Picture1-512.png" width = 60px></a></div>
 		</div>
 		<br>
+		<!--search bar etc-->
 		<div class = "centre">
-			<textarea style=font-size:20px>Search Books</textarea>
+			<label for="searchTerm">Search</label>
+          	<input id="searchTerm" type="text" placeholder="Search" name="searchTerm">
+			
+          	<button type="search" onclick="search()">Search</button>
+
 			<h2 style=font-family:verdana>Featured Books</h3>
 		</div>
-
+		<!--show featured books-->
 		<table class = "centre">
 			
 			<tr>

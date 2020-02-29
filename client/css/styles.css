@@ -62,3 +62,21 @@ td {
 .bookCoverCol {
   width: 20vw;
 }
+.userPageBooks {
+  width: 13vw;
+  height: 35vh;
+  margin: 0;
+}
+.userPageRecentReviews {
+  width: 100%;
+  overflow-x: scroll;
+}
+.fixedBottom {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1030;
+  overflow-x: scroll;
+  background-color: rgba(9,162,224,0.88);
+}
