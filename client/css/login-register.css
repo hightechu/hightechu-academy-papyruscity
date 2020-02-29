@@ -1,0 +1,12 @@
+/* Add Styles Here */
+body {background-color: seagreen;}
+#yeet {
+    font-size: 4000;
+}
+div {
+    background-color: palegreen;
+    width: 300px;
+    border: 15px solid black;
+    padding: 65px;
+    margin: 20px;
+  }
