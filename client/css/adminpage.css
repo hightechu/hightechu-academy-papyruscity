@@ -1,0 +1,22 @@
+/* Add Styles Here */
+body {background-color: orangered}
+h1 {
+    font-size: 70px;
+    text-decoration: underline;
+}
+h2 {
+    font-size: 50px;
+    text-decoration: italic;
+}
+#TextArea {
+    width: 400px;
+    height: 100px;
+    display: block;
+    font-size: 25px;
+}
+#SearchButton {
+    width: 400px;
+    height: 100px;
+    display: block;
+    font-size: 25px;
+}
