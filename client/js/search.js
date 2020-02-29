@@ -25,8 +25,26 @@ function searchID() {
   connectAPI("texts/{0}".format(jsonObj.id), "GET", responseStatus);
 }
 
+function remLSPref(pref, newName) {
+    for (var key in sessionStorage) {
+        if (key.indexOf(pref) == 0) {
+            if (key != newName) {
+                sessionStorage.removeItem(key);
+            }
+        }
+    }
+}
+
+sessionStorage.getItem("TEST");
+sessionStorage.setItem("TEST", "Hello");
+
 // keyword serach
 function search() {
+    var pref = 'label-';
+    var key = pref;
+    
+    // rem old ls
+    remLSPref(pref);
   // If the response has an error -> inform user
   // Else is successful -> inform user
   responseStatus = function(response, status) {
@@ -38,13 +56,14 @@ function search() {
           // Account Created Successfully
           console.log(response.texts);
           // Redirect User to Homepage
-
           for (let step = 0; step < response.texts.length; step++) {
-              // Runs 5 times, with values of step 0 through 4.
-              console.log(response.texts[step]);
-              document.getElementById("dataFromAPI").innerHTML += response.texts[step].author + ",\ ";
-              document.getElementById("dataFromAPI").innerHTML += response.texts[step].language + ",\ ";
-              document.getElementById("dataFromAPI").innerHTML += response.texts[step].rights + ",\ ";
+            sessionStorage.getItem('Author-' + [step]);
+            sessionStorage.getItem('Language-' + [step]);
+            sessionStorage.getItem('Rights-' + [step]);
+            console.log(response.texts[step]);
+            sessionStorage.setItem('Author-' + [step], response.texts[step].author);
+            sessionStorage.setItem('Language-' + [step], response.texts[step].language);
+            sessionStorage.setItem('Rights-' + [step], response.texts[step].rights);
               for (let i = 0; i < response.texts[step].subject.length; i++) {
                   document.getElementById("dataFromAPI").innerHTML += response.texts[step].subject[i] + ",\ ";
               }
