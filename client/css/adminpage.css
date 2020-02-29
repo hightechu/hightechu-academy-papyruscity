@@ -11,12 +11,32 @@ h2 {
 #TextArea {
     width: 400px;
     height: 100px;
-    display: block;
     font-size: 25px;
+    text-align: center;
 }
 #SearchButton {
     width: 400px;
     height: 100px;
     display: block;
     font-size: 25px;
+}
+h3 {
+    font-size: 45px;
+    text-decoration: underline;
+}
+h4 {
+    font-size: 30px;
+}
+.UserActivity {
+    width: 300px;
+    height: 200px;
+}
+.DeleteUser {
+    width: 200px;
+    height: 70px;
+    font-size: 30px;
+    text-align: center;
+}
+h6 {
+    font-size: 35px;
 }
