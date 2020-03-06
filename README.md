@@ -1,14 +1,14 @@
 # Hightechu Academy Group Project :metal:
 
-HighTechU Group Project
+HighTechU Group 2 Project
 
 ## [REPLACE ME WITH YOUR GROUP PROJECT NAME]
 
-### Website :star:
+Papyrus City? :star:
 
 [DELETE ME - ADD YOUR LIVE DEMO URL HERE]
 
-[Live Demo]()
+[https://papyrus-city.herokuapp.com/]()
 
 ### Mini Pitch :ghost:
 
