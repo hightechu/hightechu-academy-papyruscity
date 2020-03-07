@@ -3,42 +3,91 @@
 <!-- ENGLISH -->
 <html lang="en">
 	<!-- HEAD -->
+	<!--this head is basically a tutorial-->
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<!-- ADD TITLE -->
-		<title></title>
+		<title>Papyrus City babyyyy</title>
 		<!-- ADD DESCRIPTION -->
-		<meta name="description" content="">
+		<meta name="description" content="lets get this bread gamers">
 		<!-- ADD AUTHOR -->
-		<meta name="author" content="">
+		<meta name="author" content="myfanwy!!">
 		<!-- ADD CSS FILES HERE -->
 		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 		<!-- ADD FAVICON -->
 		<!-- Learn more about favicons here: https://en.wikipedia.org/wiki/Favicon -->
 	</head>
 	<!-- BODY -->
 	<body onload="getUserData()">
-		<!-- ADD CONTENT HERE -->
+		<!--top navigation-->
+		<div class = "row; topnav">
+			<div class="col-sm-9" style = "font-size: 25px;" onload="loginCheck()">Papyrus City</div>
+			
+			
+		
+		
+			<!--<button onclick = "loginCheck()"> </button>-->
 
-		<!-- LANDING CONTENT -->
-		<main>
-			<section>
-				<h1>Hello World</h1>
-			</section>
-			<section>
-				<p>
-					<span id="dataFromAPI"></span>
-					<span id="loginRegister"></span>
-				</p>
-			</section>
-		</main>
 
-		<!-- JAVASCRIPT SCRIPT -->
-		<!-- ADD JS FILES HERE -->
+			<div class = "col-sm-2" id = "sign_in"><a href = "login-register.html"><button>Login/Sign-Up</button></a></div>
+			<div class = "col-sm-2" id = "sign_out"><a href = "login-register.html"><button>Sign-Out</button></a></div>
+			
+
+
+
+			<div class = "col-sm-1" style="align-self: right;margin-top: 0;"><a href="user-page.html"><img src = "https://cdn2.iconfinder.com/data/icons/people-80/96/Picture1-512.png" width = 60px></a></div>
+		</div>
+		<br>
+		<!--search bar etc-->
+		<div class = "centre">
+			<label for="searchTerm">Search</label>
+          	<input id="searchTerm" type="text" placeholder="Search" name="searchTerm">
+			
+          	<button type="search" onclick="search()">Search</button>
+
+			<h2 style=font-family:verdana>Featured Books</h3>
+		</div>
+		<!--show featured books-->
+		<table class = "centre">
+			
+			<tr>
+				<th><img src = "https://images-na.ssl-images-amazon.com/images/I/91GWKIu0UjL.jpg" width = 170px></th>
+				<th><img src = "https://images-na.ssl-images-amazon.com/images/I/81C8HWLbwRL.jpg" width =170px></th>
+				<th><a href = "book-page.html"><img src = "https://upload.wikimedia.org/wikipedia/en/thumb/1/10/Six_of_Crows_by_Leigh_Bardugo_book_cover.jpeg/220px-Six_of_Crows_by_Leigh_Bardugo_book_cover.jpeg"width = 170></a></th>
+			</tr>
+			<tr>
+				<td>This book is recommended<br> by Jamie:)</td>
+				<td>This book is recommended<br> by Mateo:)</td>
+				<td>This book is recommended<br> by Myfanwy:)</td>
+			</tr>
+			
+		</table>
+
+		<table class = "centre">
+
+			<tr>
+				<th><img src = "https://images-na.ssl-images-amazon.com/images/I/81jMcamaBRL.jpg" width = 170px></th>
+				<th><img src = "https://images-na.ssl-images-amazon.com/images/I/91yhBlrDY%2BL.jpg" width = 170px></th>
+			</tr>
+
+			<tr>
+				<td style="font-family: fantasy;">This is another book recommended<br> by Mateo!</td>
+				<td>This is Mateo's third book!</td>
+			</tr>
+
+		</table>
+
+
+
 		<script src="js/helper.js"></script> <!-- Loopback JavaScript Helper-->
 		<script src="js/data.js"></script>
+		<script src="js/login-register.js"></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	</body>
 </html>

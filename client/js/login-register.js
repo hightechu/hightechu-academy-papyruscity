@@ -62,3 +62,17 @@ if (getCookie("userAuth")) {
   // Redirect User to Homepage
   window.location = "/";
 }
+function loginCheck(){
+  
+  if (!getCookie("userAuth")) {
+    
+    var elem = document.getElementById("sign_in");
+    elem.style.display = "none";
+    
+  }
+  else{
+    
+    document.getElementById("sign_out").style.display = "none";
+  }
+
+}
