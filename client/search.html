@@ -33,15 +33,18 @@
           <label for="bookID">BookID</label>
           <input id="bookID" type="number" placeholder="Enter Book ID" name="bookID">
 
-          <button type="search" onclick="searchID()">Search</button>
+          
+            <a href="tempResults.html"><button type="search" onclick="searchID()">Search</button></a>
 
           <br>
           <br>
           <!-- Title search -->
-          <label for="searchTitle">Title Search</label>
-          <input id="searchTitle" type="text" placeholder="Search" name="searchTitle">
-      
-          <button type="search" onclick="search()">Search</button>
+          <form action="tempResults.html">
+              <label for="searchTitle">Title Search</label>
+              <input id="searchTitle" type="text" placeholder="Search" name="searchTitle">
+          
+              <!--<a href="tempResults.html">--><button type="search">Search</button>
+          </form>
           
           <br>
           <br>
@@ -50,7 +53,7 @@
           <label for="searchTerm">Term Search</label>
           <input id="searchTerm" type="text" placeholder="Search" name="searchTerm">
       
-          <button type="search" onclick="searchTerm()">Search</button>  
+          <a href="tempResults.html"><button type="search" onclick="searchTerm()">Search</button></a>  
         </div>
       </section>
 
