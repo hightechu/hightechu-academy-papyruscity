@@ -40,30 +40,46 @@ td {
 .reviewbox {
   overflow: scroll;
   width: 79vw;
-  height: 33.3vh;
+
+  height: 29vh;
+
   font-family: Verdana;
   border: 1px solid black;
   padding: 0;
   margin: 0;
 }
 .inlineReview {
-  height: 100vh;
+
+  height: 87vh;
+
   align-items: flex-start;
   display: inline-block;
   overflow: hidden;
 }
 .inlineUserPage {
-  height: 50vh;
+
+  height: 51vh;
+
   align-items: flex-start;
   display: inline-block;
   overflow: hidden;
 }
+
+.inlineUserPageTwo {
+  height: 51vh;
+  align-items: flex-start;
+  display: inline-block;
+  overflow: hidden;
+  border-style: solid;
+  border: 3px #28a745;
+}
+
 .scrollReview {
   overflow: scroll;
 }
 .bookCover {
   width: 20vw;
-  height: 65vh;
+
 }
 .bookCoverCol {
   width: 20vw;
@@ -91,4 +107,6 @@ td {
   height: 4vh;
   overflow: hidden;
   margin: 10px;
+
 }
+
