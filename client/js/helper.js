@@ -33,13 +33,67 @@ function getCookie(cname) {
  * @param {boolean} parse Parse the response to JS object
  * @param {boolean} callapi Call an api endpoint
  */
-function connectAPI(endpoint, method, fn, obj = null, parse = true, callapi = true) {
-  var location = "";
+function connectAPI(endpoint, method, fn, obj = null, parse = true, callapi = false) {
+  var location = "https://gutenberg.justamouse.com/";
   if (callapi) {
-    location = "{0}/api/{1}".format(document.location.origin, endpoint);
+    location = "{0}/api/{1}".format(location, endpoint);
   }
   else {
-    location = "{0}/{1}".format(document.location.origin, endpoint)
+    location = "{0}/{1}".format(location, endpoint)
+  }
+
+  var http_request = new XMLHttpRequest();
+
+  http_request.onreadystatechange = function () {
+    //A new XMLHttpRequest object starts in state 0
+    if (this.readyState == 1) {
+      console.log("Opening connection to server");
+      return;
+    }
+    if (this.readyState == 2) {
+      console.log("Sending request to server");
+      return;
+    }
+    if (this.readyState == 3) {
+      console.log("Waiting for server response");
+      return;
+    }
+    if (this.readyState == 4) {
+      console.log("Server successfully responded");
+      var response = "";
+      if (parse) {
+        response = JSON.parse(this.responseText);
+      }
+      else {
+        response = this.responseText;
+      }
+      fn(response, this.status)
+      return;
+    }
+    console.log("Failure");
+  }
+
+  http_request.open(method, location, true);
+  http_request.setRequestHeader("Content-type", "application/json");
+  auth = getCookie("userAuth");
+  if (auth) {
+    http_request.setRequestHeader('Authorization', auth);
+  }
+  if (obj) {
+    postData = JSON.stringify(obj);
+    http_request.send(postData);
+  }
+  else {
+    http_request.send();
+  }
+}
+function connectGutendex(endpoint, method, fn, obj = null, parse = true, callapi = true) {
+  var location = "http://gutendex.com/";
+  if (callapi) {
+    location = "{0}books?{1}".format(location, endpoint);
+  }
+  else {
+    location = "{0}/{1}".format(location, endpoint)
   }
 
   var http_request = new XMLHttpRequest();
