@@ -1,4 +1,5 @@
 let myList;
+let search_result;
 
 for (let step = 0; step < search_result; step++) {
   sessionStorage.getItem('Author-' + [step]);

@@ -153,3 +153,4 @@ if (!String.prototype.format) {
     });
   };
 }
+let isPaused = false;
