@@ -11,7 +11,17 @@
     </head>
 
     <body onload = "getUserData()">
-        <span class="inlineReview">
+
+        <!--topnav-->
+        <div class="topnav">
+            <div class="col-sm-3"><a href="index.html"><button type="button" class="btn btn-success" style="font-size: 15px;">Home</button></a></div>
+            <div class="col-sm-6"><a href="makeareview.html"><button type="button" class="btn btn-success" style="font-size: 30px;">Make a Review</button></a></div>
+            <div class = "col-sm-2"><a href = "login-register.html"><button>Login/Sign-Up</button></a></div>
+			<div class = "col-sm-1" style="align-self: right;margin-top: 0;"><a href="user-page.html"><img src = "https://cdn2.iconfinder.com/data/icons/people-80/96/Picture1-512.png" width = 60px></a></div>
+        </div>
+
+        <!--left side of screen, contains cover page, author, and synopsis-->
+        <span class="inlineReview bookCoverCol">
             <img class="bookCover" src = "https://upload.wikimedia.org/wikipedia/en/thumb/1/10/Six_of_Crows_by_Leigh_Bardugo_book_cover.jpeg/220px-Six_of_Crows_by_Leigh_Bardugo_book_cover.jpeg">
             <text height: 5%><br>Leigh Bardugo</text>
             <text height: 5%>29th of Spetember, 2015</text>
@@ -32,8 +42,10 @@
                 Kaz’s crew is the only thing that might stand between the world and destruction—if they don’t kill each other first.
             </p>
         </span>
+        <!--right side of screen, contains reviews and nothing else-->
         <span class="inlineReview scrollReview">
-            <p class = "reviewbox">review #1</p>
+
+            <p class = "reviewbox">Thumbs up! <br> -Emi</p>
             <p class = "reviewbox">review #2</p>
             <p class = "reviewbox">review #3</p>
             <p class = "reviewbox">review #4</p>
