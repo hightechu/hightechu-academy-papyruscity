@@ -1,7 +1,9 @@
 {
   "ids": {
     "User": 3,
+
     "AccessToken": 3,
+
     "ACL": 1,
     "RoleMapping": 1,
     "Role": 1
@@ -9,6 +11,7 @@
   "models": {
     "User": {
       "1": "{\"password\":\"$2a$10$d9bXH0ov.PVQ.sbh8uPxmuzJI2Jlwm/f61Mn8Q7t4uqXxEItlc/G2\",\"email\":\"test@test.test\",\"id\":1}",
+
       "2": "{\"password\":\"$2a$10$xpRF1xqHzsjnRilDJAr6IuqZR6B6p9cFapX9DFK/xnH7YUn2BkYjG\",\"email\":\"yeet@gmail.com\",\"id\":2}"
     },
     "AccessToken": {

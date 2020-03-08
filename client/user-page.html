@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="english">
+
+    <head>
+        <!--I need these for set up-->
+        <title>This is for you!</title>
+        <meta name = "description" content = "ok boomer">
+        <meta name = "author" content = "myfanwy,,, again!">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel = "stylesheet" href = "css/styles.css">
+
+    </head>
+
+    <body>
+
+        <!--get back to home etc-->
+        <div class="topnav">
+
+            <div class="col-sm-9"><a href="index.html"><button type="button" class="btn btn-success" style="font-size: 15px;">Home</button></a></div>
+            <div class = "col-sm-2"><a href = "login-register.html"><button>Login/Sign-Up</button></a></div>
+			<div class = "col-sm-1" style="align-self: right;margin-top: 0;"><a href="user-page.html"><img src = "https://cdn2.iconfinder.com/data/icons/people-80/96/Picture1-512.png" width = 60px></a></div>
+        </div>
+
+        <!--icon + current username + current email go here-->
+        <span class="inlineUserPageTwo">
+            <img style="height: 45vh;" src="https://cdn2.iconfinder.com/data/icons/people-80/96/Picture1-512.png">
+            <p class="noTopBorder" style="font-size: 25px; width: 45vh; text-align: center;">Username:))</p>
+
+        </span>
+
+        <!--for changing password/username/email-->
+        <span class="inlineUserPage" style="width: 55vw; border: 1px blueviolet;">
+            <div class="centre">
+                <textarea class="userPageInput">Change Username</textarea>
+                <a><button>Enter</button></a>
+            </div>
+            <br>
+            <div class="centre">
+                <textarea class="userPageInput">Change Password</textarea>
+                <a><button>Enter</button></a>
+            </div>
+            <br>
+            <div class="centre">
+                <textarea class="userPageInput">Change Email</textarea>
+                <a><button>Enter</button></a>
+            </div>
+            <br>
+            <div class="centre">
+                <textarea class="userPageInput">Current Password</textarea>
+                <a><button>Enter</button></a>
+            </div>
+
+        </span>
+        
+
+        <!--this is for books at the bottom of the page. horizontal scrolling is hard and kiara is awesome-->
+        <div class="fixedBottom" style="height: 37vh;">
+            <table class=" userPageRecentReviews">
+                <tr>
+                    <td><img class="userPageBooks" src="https://images-na.ssl-images-amazon.com/images/I/91GWKIu0UjL.jpg"></td>
+                    <td><img class="userPageBooks" src="https://images-na.ssl-images-amazon.com/images/I/81C8HWLbwRL.jpg"></td>
+                    <td><a href = "book-page.html"><img class="userPageBooks" src = "https://upload.wikimedia.org/wikipedia/en/thumb/1/10/Six_of_Crows_by_Leigh_Bardugo_book_cover.jpeg/220px-Six_of_Crows_by_Leigh_Bardugo_book_cover.jpeg"></a></td>
+                    <td><img class="userPageBooks" src="https://images-na.ssl-images-amazon.com/images/I/81jMcamaBRL.jpg"></td>
+                    <td><img class="userPageBooks" src="https://images-na.ssl-images-amazon.com/images/I/91yhBlrDY%2BL.jpg"></td>
+                </tr>
+            </table>
+        </div>
+
+
+        <!--script time boiiiiis-->
+        <script src="js/helper.js"></script> <!-- Loopback JavaScript Helper-->
+		<script src="js/data.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+
+</html>

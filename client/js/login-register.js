@@ -21,7 +21,7 @@ function createAccount() {
   jsonObj.password = document.getElementById("passwordRegister").value;
 
   // Connect to the API
-  connectAPI("users", "POST", responseStatus, jsonObj);
+  connectAPILogin("users", "POST", responseStatus, jsonObj);
 }
 
 // login
@@ -52,7 +52,7 @@ function login() {
   jsonObj.password = document.getElementById("passwordLogin").value;
 
   // Connect to the API
-  connectAPI("users/login", "POST", responseStatus, jsonObj);
+  connectAPILogin("users/login", "POST", responseStatus, jsonObj);
 }
 
 // Check if user is already logged in
@@ -60,5 +60,24 @@ if (getCookie("userAuth")) {
   // User already logged in
  console.log("You are already logged in.");
   // Redirect User to Homepage
-  window.location = "/";
+  // window.location = "/";
+}
+function loginCheck(){
+  
+  if (getCookie("userAuth")) {
+    console.log(getCookie("userAuth"));
+    var elem = document.getElementById("sign_in");
+    elem.style.display = "none";
+    
+  }
+  else{
+    
+    var elem = document.getElementById("sign_out")
+    elem.style.display = "none";
+  }
+
+}
+
+function sign_out () {
+  clearCookie();
 }

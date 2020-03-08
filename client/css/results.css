@@ -1,0 +1,41 @@
+/* Add Styles Here */
+body {background-color: orangered;}
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 70px;
+}
+h2 {
+    text-align: center;
+    font-style: italic;
+    font-size: 50px;
+}
+h3 {
+    font-size: 35px;
+}
+
+#SearchBooks{
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    display: block;
+    width: 600px;
+    font-size: 60px;
+}
+.BookReview{
+    width: 400px;
+    height: 100px;
+    display: block;
+    font-size: 20px;
+}
+#Search {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 70px;
+    width: 200px;
+    font-size: 50px;
+}
+.BookCover {
+    height: 40px;
+}
