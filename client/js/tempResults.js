@@ -1,4 +1,12 @@
-var myList = [
+let myList;
+let search_result;
+
+for (let step = 0; step < search_result; step++) {
+  sessionStorage.getItem('Author-' + [step]);
+  sessionStorage.getItem('Language-' + [step]);
+  sessionStorage.getItem('Rights-' + [step]);
+}
+myList = [
   { "name": "abc", "age": 50 },
   { "age": "25", "hobby": "swimming" },
   { "name": "xyz", "hobby": "programming" }
@@ -6,6 +14,7 @@ var myList = [
 
 // Builds the HTML Table out of myList.
 function buildHtmlTable(selector) {
+  search(getUrlVars());
   var columns = addAllColumnHeaders(myList, selector);
 
   for (var i = 0; i < myList.length; i++) {
@@ -38,4 +47,12 @@ function addAllColumnHeaders(myList, selector) {
   $(selector).append(headerTr$);
 
   return columnSet;
+}
+
+function getUrlVars() {
+  var vars = {};
+  var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+      vars[key] = value;
+  });
+  return vars;
 }
