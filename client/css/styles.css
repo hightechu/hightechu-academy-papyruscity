@@ -40,20 +40,26 @@ td {
 .reviewbox {
   overflow: scroll;
   width: 79vw;
+
   height: 29vh;
+
   font-family: Verdana;
   border: 1px solid black;
   padding: 0;
   margin: 0;
 }
 .inlineReview {
+
   height: 87vh;
+
   align-items: flex-start;
   display: inline-block;
   overflow: hidden;
 }
 .inlineUserPage {
+
   height: 51vh;
+
   align-items: flex-start;
   display: inline-block;
   overflow: hidden;
@@ -98,4 +104,6 @@ td {
   height: 4vh;
   overflow: hidden;
   margin: 10px;
+
 }
+

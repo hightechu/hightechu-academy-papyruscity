@@ -14,41 +14,59 @@
     <!-- ADD AUTHOR -->
     <meta name="author" content="">
     <!-- ADD CSS FILES HERE -->
-    <link rel="stylesheet" href="css/styles.css">
-
+    <link rel="stylesheet" href="css/login-register.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- ADD FAVICON -->
     <!-- Learn more about favicons here: https://en.wikipedia.org/wiki/Favicon -->
   </head>
   <!-- BODY -->
   <body>
-    <!-- ADD CONTENT HERE -->
+
+    
+      <a href="index.html"><button type="button" class="btn btn-success" style="font-size: 15px;">Home</button></a>  
+
+      <center>
     <main>
+      
+    
+        <h1 id="yeet">
+            Create an Account or Log in <br>  Papyrus City
+        </h1>
+    
       <!-- Register Form -->
+      
       <section>
         <h2>Register</h2>
-        <p>Create an account :D</p>
-        <div>
+        <p>Create an Account.</p>
+        <div class="loginfield"> 
+            
           <label for="emailRegister">Email</label>
           <input id="emailRegister" type="text" placeholder="Enter Email" name="emailRegister" required>
+          
+          <center>
       
           <label for="passwordRegister">Password</label>
           <input id="passwordRegister" type="password" placeholder="Enter Password" name="passwordRegister" required>
+          </center>
       
           <button type="submit" onclick="createAccount()">Register</button>
         </div>
       </section>
       <!-- Login Form -->
       <section>
-        <h2>Login</h2>
-        <p>If you already have an account login here!</p>
-        <div>
+        <h2>Log in</h2>
+        <p>Already a Member? Log in Here.</p>
+        <div class="loginfield">
           <label for="emailLogin">Email</label>
           <input id="emailLogin" type="text" placeholder="Enter Email" name="emailLogin" required>
+          
+          <center>
       
           <label for="passwordLogin">Password</label>
           <input id="passwordLogin" type="password" placeholder="Enter Password" name="passwordLogin" required>
+          </center>
       
-          <button type="submit" onclick="login()">Login</button>
+          <button type="submit" onclick="login()">Log in</button>
         </div>
       </section>
     </main>
@@ -57,5 +75,7 @@
     <!-- ADD JS FILES HERE -->
     <script src="js/helper.js"></script> <!-- Loopback JavaScript Helper-->
     <script src="js/login-register.js"></script>
+    <script src="js/helperlogin.js"></script>
+  </center>
   </body>
 </html>
