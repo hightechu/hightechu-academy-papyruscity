@@ -32,7 +32,7 @@
         <br>
         <div class="centre">
           <!-- Id search --> 
-          <div class="searchfield">
+          <div class="centre searchfield">
             <label for="bookID">BookID</label>
             <input id="bookID" type="number" placeholder="Enter Book ID" name="bookID">
             <a href="tempResults.html"><button type="search" onclick="searchID()">Search</button></a>
@@ -43,7 +43,7 @@
           <br>
           <br>
           <!-- Title search -->
-          <form action="results.html">
+          <form action="results.html" class="searchfield">
               <label for="searchTitle">Title Search</label>
               <input id="searchTitle" type="text" placeholder="Search" name="searchTitle">
           
@@ -54,10 +54,12 @@
           <br>
 
           <!-- Term search -->
-          <label for="searchTerm">Term Search</label>
-          <input id="searchTerm" type="text" placeholder="Search" name="searchTerm">
-      
-          <a href="tempResults.html"><button type="search" onclick="searchTerm()">Search</button></a>  
+          <div class="searchfield">
+            <label for="searchTerm">Term Search</label>
+            <input id="searchTerm" type="text" placeholder="Search" name="searchTerm">
+        
+            <a href="tempResults.html"><button type="search" onclick="searchTerm()">Search</button></a>  
+          </div>
         </div>
       </section>
 
