@@ -64,7 +64,6 @@ td {
   display: inline-block;
   overflow: hidden;
 }
-
 .inlineUserPageTwo {
   height: 51vh;
   align-items: flex-start;
@@ -73,13 +72,11 @@ td {
   border-style: solid;
   border: 3px #28a745;
 }
-
 .scrollReview {
   overflow: scroll;
 }
 .bookCover {
   width: 20vw;
-
 }
 .bookCoverCol {
   width: 20vw;

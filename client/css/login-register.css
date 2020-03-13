@@ -1,12 +1,24 @@
 /* Add Styles Here */
-body {background-color: seagreen;}
+/*body {background-color: white;}*/
 #yeet {
     font-size: 4000;
 }
-div {
-    background-color: palegreen;
+.loginfield {
+    background-color: rgba(9,162,224,0.88);
     width: 300px;
-    border: 15px solid black;
+    border: 15px solid #28a745;
     padding: 65px;
     margin: 20px;
+  }
+
+  .topnav {
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: rgba(9,162,224,0.88);
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    
   }
