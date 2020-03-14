@@ -38,9 +38,10 @@ Most book websites have a majority of adult or kid readers, even on books aimed 
 
 ### Promo :grinning:
 
-[DELETE ME - ADD YOUR WEBSITE PROMO IMAGES HERE]
-
-![Example: Promo 1]()
+![](img/PapyrusCityHomePage.png)
+![](img/PapyrusCityLog-inSign-up.png)
+![](img/PapyrusCitySixOfCrows.png)
+![](img/PapyrusCityUserPage.png)
 
 ## Getting Started :thinking:
 
