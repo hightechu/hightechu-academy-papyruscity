@@ -1,23 +1,69 @@
 /* Add Styles Here */
-body {background-color: orangered;}
-h1 {
+/*body {background-color: #28a745;}*/
+.centre {
+    margin:auto;
     text-align: center;
-    text-decoration: underline;
-    font-size: 70px;
 }
+.topnav {
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: rgba(9,162,224,0.88);
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.title{
+    text-align: center;
+    font-size: 60px;
+}
+/*horizontal stuff*/
+.textAreaInline{
+    height: 100px;
+    overflow: scroll;
+    font: 15px;
+}
+.textAreaTitleInline{
+    text-align: left;
+    align-items: flex-start;
+    overflow: hidden;
+}
+/*vertical stuff*/
+.insertTitle {
+    width: 20vw;
+    align-items: flex-start;
+    display: inline-block;
+}
+.makeReview {
+    align-items: flex-start;
+    width: 40vw;
+    display: inline-block;
+}
+#BookName {
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#ReviewSpace {
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+.box {
+    border: solid black 2px;
+}
+
 h2 {
     text-align: center;
     font-style: italic;
     font-size: 50px;
 }
-#ReviewSpace {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 400px;
-    height: 100px;
-    font-size: 30px;
-}
+
 #Submit {
     font-size: 40px;
     margin-left: auto;
@@ -51,14 +97,7 @@ h4 {
     font-size: 50px;
     text-decoration: underline;
 }
-#BookName {
-    width: 400;
-    height: 70px;
-    font-size: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
+
 h6 {
     text-align: center;
     font-size: 50px;
