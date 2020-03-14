@@ -35,12 +35,12 @@ function waitForIt() {
         for (let step = 0; step < books.length; step++) {
             let div = document.createElement('div');
             div.innerHTML = 
-                '<div>\
+                '<div class = "resultsbox">\
                     <td>\
-                    <h3 id="title">' + books[step].title + '</h3>\
-                    <h4 id="author">' + books[step].author + '</h4>\
-                    <h5 id="rights">' + books[step].rights + "\ " + books[step].language + '</h5>\
+                    <h3 id="title" class="centre">' + books[step].title + '</h3>\
+                    <h4 id="author" class="centre">' + books[step].author + '</h4>\
                     <ul id="Subjects">' + addSubject(books[step].subject) + '</ul>\
+                    <p style="font-size: 20px; margin-left: 10px" id="rights">' + books[step].rights + "\ " + books[step].language + '</p>\
                     <textarea class="BookReview">\
                 (Book Review)\
                     </textarea>\

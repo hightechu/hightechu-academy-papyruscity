@@ -1,10 +1,10 @@
 /* Add Styles Here */
-body {background-color: orangered;}
-h1 {
+/*this doesn't work*/
+body{background-color: #28a745;}
+.centre {
+    margin:auto;
     text-align: center;
-    text-decoration: underline;
-    font-size: 70px;
-}
+  }
 h2 {
     text-align: center;
     font-style: italic;
@@ -38,4 +38,26 @@ h3 {
 }
 .BookCover {
     height: 40px;
+}
+.title {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 40px;
+}
+.topnav {
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: rgba(9,162,224,0.88);
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.resultsbox{ 
+    background-color: white;
+    margin: auto;
+    width: 40vw;
+    overflow-wrap: normal;
+    border: solid #28a745 1px;
 }
