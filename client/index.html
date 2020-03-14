@@ -27,31 +27,24 @@
 		<div class = "row; topnav">
 			<div class="col-sm-9" style = "font-size: 25px;">Papyrus City</div>
 			
-			
-		
 			<!--<button onclick = "loginCheck()"> </button>-->
-
 
 			<div class = "col-sm-2" id = "sign_in"><a href = "login-register.html"><button>Login/Sign-Up</button></a></div>
 			<div class = "col-sm-2" id = "sign_out"><button onclick="sign_out()">Sign-Out</button></div>
 			
-
-
-
 			<div class = "col-sm-1" style="align-self: right;margin-top: 0;"><a href="user-page.html"><img src = "https://cdn2.iconfinder.com/data/icons/people-80/96/Picture1-512.png" width = 60px></a></div>
 		</div>
 		<br>
 		<!--search bar etc-->
 		<div class = "centre">
-			<!--<a href="search.html"><button>search</button></a> -->
-			<form action="results.html">
-					<!--<label for="searchTitle">Title Search</label>-->
-					<input id="searchTitle" type="text" placeholder="Search" name="searchTitle">
-				
-					<button type="search">Search</button>
-				</form>
+			<!--<a href="search.html"><button>search</button></a>-->
 
-			<h2 style=font-family:verdana>Featured Books</h3>
+			<label for="searchTerm">Search</label>
+          	<input id="searchTerm" type="text" placeholder="Search" name="searchTerm">
+			
+          	<button type="search" onclick="search()">Search</button>
+
+			<h2 style=font-family:verdana>Featured Books</h2>
 		</div>
 		<!--show featured books-->
 		<table class = "centre">
@@ -82,13 +75,6 @@
 			</tr>
 
 		</table>
-
-
-
-		<script src="js/helper.js"></script> <!-- Loopback JavaScript Helper-->
-		<script src="js/data.js"></script>
-<!DOCTYPE html>
-
 
 		<script src="js/helper.js"></script> <!-- Loopback JavaScript Helper-->
 		<script src="js/data.js"></script>
