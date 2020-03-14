@@ -18,11 +18,11 @@ HighTechU Group Project
 
 ### User Stories :snowboarder:
 
-[I want my users to be able to sign up and log in.
-I want my users to be able to search for books.
-I want my users to be able to read books online.
-I want my users to be able to review books.
-I want my users to be able to read reviews from others.]
+* I want my users to be able to sign up and log in.
+* I want my users to be able to search for books.
+* I want my users to be able to read books online.
+* I want my users to be able to review books.
+* I want my users to be able to read reviews from others.
 
 ### Website Pages :speedboat:
 
