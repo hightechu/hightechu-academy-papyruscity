@@ -1,10 +1,8 @@
 /* Add Styles Here */
-body {background-color: orangered;}
-h1 {
+.centre {
+    margin:auto;
     text-align: center;
-    text-decoration: underline;
-    font-size: 70px;
-}
+  }
 h2 {
     text-align: center;
     font-style: italic;
@@ -39,3 +37,19 @@ h3 {
 .BookCover {
     height: 40px;
 }
+.title {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 40px;
+}
+.topnav {
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: rgba(9,162,224,0.88);
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+  }

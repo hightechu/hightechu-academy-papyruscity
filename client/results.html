@@ -17,13 +17,19 @@
         <link rel="stylesheet" href="css/results.css">
 	</head>
     <body>
-        <h1>Search Page</h1>
-        <form action="results.html" id="searchBooks">
-                <!--<label for="searchTitle">Title Search</label>-->
-                <input id="searchTitle" type="text" placeholder="Search" name="searchTitle">
-            
-                <button type="search">Search</button>
-            </form>
+        <!--get back to home etc-->
+        <div class="topnav">
+            <div class="col-sm-9"><a href="index.html"><button type="button" class="btn btn-success" style="font-size: 15px;">Home</button></a></div>
+            <div class = "col-sm-2"><a href = "login-register.html"><button>Login/Sign-Up</button></a></div>
+			<div class = "col-sm-1" style="align-self: right;margin-top: 0;"><a href="user-page.html"><img src = "https://cdn2.iconfinder.com/data/icons/people-80/96/Picture1-512.png" width = 60px></a></div>
+        </div>
+        <h1 class="title">Search Page</h1>
+        <form action="results.html" id="searchBooks" class="centre">
+            <!--<label for="searchTitle">Title Search</label>-->
+            <input id="searchTitle" type="text" placeholder="Search" name="searchTitle">
+        
+            <button type="search">Search</button>
+        </form>
         </textarea>
 
         <div id="bookResults">
