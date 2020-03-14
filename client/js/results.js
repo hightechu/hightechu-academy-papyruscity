@@ -38,9 +38,8 @@ function waitForIt() {
                 '<div>\
                     <td>\
                     <h3 id="title">' + books[step].title + '</h3>\
-                    <h3 id="author">' + books[step].author + '</h3>\
-                    <h3 id="rights">' + books[step].rights + '</h3>\
-                    <h3 id="language">' + books[step].language + '</h3>\
+                    <h4 id="author">' + books[step].author + '</h4>\
+                    <h5 id="rights">' + books[step].rights + "\ " + books[step].language + '</h5>\
                     <ul id="Subjects">' + addSubject(books[step].subject) + '</ul>\
                     <textarea class="BookReview">\
                 (Book Review)\
