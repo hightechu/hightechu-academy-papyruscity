@@ -43,14 +43,15 @@
 		<br>
 		<!--search bar etc-->
 		<div class = "centre">
-			<a href="search.html"><button>search</button></a>
+			<!--<a href="search.html"><button>search</button></a> -->
+			<form action="results.html">
+					<!--<label for="searchTitle">Title Search</label>-->
+					<input id="searchTitle" type="text" placeholder="Search" name="searchTitle">
+				
+					<button type="search">Search</button>
+				</form>
 
-			<!--<label for="searchTerm">Search</label>
-          	<input id="searchTerm" type="text" placeholder="Search" name="searchTerm">
-			
-          	<button type="search" onclick="search()">Search</button>
-
-			<h2 style=font-family:verdana>Featured Books</h3>-->
+			<h2 style=font-family:verdana>Featured Books</h3>
 		</div>
 		<!--show featured books-->
 		<table class = "centre">
