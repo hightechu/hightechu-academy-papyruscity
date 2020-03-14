@@ -6,7 +6,7 @@ HighTechU Group Project
 
 ### Website :star:
 
-[Live Demol](https://papyrus-city.herokuapp.com/index.html)
+[Live Demo](https://papyrus-city.herokuapp.com/index.html)
 
 ### Mini Pitch :ghost:
 
