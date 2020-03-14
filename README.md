@@ -2,41 +2,46 @@
 
 HighTechU Group Project
 
-## [REPLACE ME WITH YOUR GROUP PROJECT NAME]
+## Papyrus City
 
 ### Website :star:
 
-[DELETE ME - ADD YOUR LIVE DEMO URL HERE]
-
-[Live Demo]()
+[Live Demo](https://papyrus-city.herokuapp.com/index.html)
 
 ### Mini Pitch :ghost:
 
-[DELETE ME - ADD YOUR PITCH HERE]
+A website for teens to find books they enjoy and to discuss and recommend books to friends, online or otherwise.
 
 ### Problem Statment :mega:
 
-[DELETE ME - ADD YOUR PROBLEM STATMEMENT HERE]
+Most book websites have a majority of adult or kid readers, even on books aimed at teens. This website aims to focus on ages 13-20, which are disproportionately under-represented on many other sites.
 
 ### User Stories :snowboarder:
 
-[DELETE ME - ADD YOUR USER STORIES HERE]
-
-* EXAMPLE - I want my users to be able to see a default page on my website.
-* EXAMPLE - I want my users to be able to login to my website.
+* I want my users to be able to sign up and log in.
+* I want my users to be able to search for books.
+* I want my users to be able to read books online.
+* I want my users to be able to review books.
+* I want my users to be able to read reviews from others.
 
 ### Website Pages :speedboat:
 
 [DELETE ME - ADD YOUR WEBSITE PAGES HERE]
 
-* EXAMPLE - Landing Page -> `index.html`
-* EXAMPLE - Login / Register Page -> `login-register.html`
+* Home Page -> `index.html`
+* Login / Register Page -> `login-register.html`
+* Book Page -> `book-page.html`
+* Make a Review Page -> `makeareview`
+* Search Page -> `search.html`
+* Results Page -> `results.html`
+* Personal User Page -> `user-page.html`
 
 ### Promo :grinning:
 
-[DELETE ME - ADD YOUR WEBSITE PROMO IMAGES HERE]
-
-![Example: Promo 1]()
+![](img/PapyrusCityHomePage.png)
+![](img/PapyrusCityLog-inSign-up.png)
+![](img/PapyrusCitySixOfCrows.png)
+![](img/PapyrusCityUserPage.png)
 
 ## Getting Started :thinking:
 
