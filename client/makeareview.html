@@ -14,35 +14,37 @@
 		<!-- ADD AUTHOR -->
 		<meta name="author" content="">
 		<!-- ADD CSS FILES HERE -->
-        <link rel="stylesheet" href="css/makeareview.css">
+		<link rel="stylesheet" href="css/makeareview.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	</head>
     <body>
-        <h1>Make A Book Review!</h1>
-	</body>
-		<h2>
-		Make your review here!
-		</h2>
-		<h2>.___.</h2>
-		<h6>
-			Name of the Book:
-		</h6>
-		<textarea id="BookName">
-(enter book name here...)
-		</textarea>
-		<h5>
+		<!--topnav-->
+        <div class="topnav">
+            <div class="col-sm-3"><a href="index.html"><button type="button" class="btn btn-success" style="font-size: 15px;">Home</button></a></div>
+			<div class="col-sm-6 title"><h1>Make A Book Review!</h1></div>
+			<div class = "col-sm-2"><a href = "login-register.html"><button>Login/Sign-Up</button></a></div>
+			<div class = "col-sm-1" style="align-self: right;margin-top: 0;"><a href="user-page.html"><img src = "https://cdn2.iconfinder.com/data/icons/people-80/96/Picture1-512.png" width = 60px></a></div>
+		</div>
 			
-		</h5>
-		<h4>
-			Type Your Review Below!
-		</h4>
-		<textarea id="ReviewSpace">
-		</textarea>
-		<h5>
+		<!--for making the review-->
+		<div class="centre">
+			<div class="insertTitle">
+				<p class="textAreaTitleInline">Name of the Book:</p>
+				<div class="textAreaInline"><textarea id="BookName" style="width: 20vw; height: 100px;">(enter book name here...)</textarea></div>
+			</div>
+
 			
-		</h5>
-		<button id="Submit">
-			Submit Review!
-		</button>
+
+			<div class="makeReview">
+				<p class="textAreaTitleInline">Your Review:</p>
+				<div class="textAreaInline"><textarea id="ReviewSpace" style="width: 40vw; height: 100px;">(enter review here...)</textarea></div>
+			</div>
+
+		</div>
+
+
+		
+		<button id="Submit">Submit</button>
 		<h3>
 			Did you like this book?
 		</h3>
@@ -52,4 +54,6 @@
 		<button id="No">
 			No :(
 		</button>
+		<h2>.___.</h2>
+	</body>
 </html>

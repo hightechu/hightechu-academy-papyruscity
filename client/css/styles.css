@@ -49,7 +49,6 @@ td {
   margin: 0;
 }
 .inlineReview {
-
   height: 87vh;
 
   align-items: flex-start;
@@ -57,7 +56,6 @@ td {
   overflow: hidden;
 }
 .inlineUserPage {
-
   height: 51vh;
 
   align-items: flex-start;
