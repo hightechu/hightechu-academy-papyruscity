@@ -2,7 +2,7 @@
 
 HighTechU Group Project
 
-## [Papyrus City]
+## Papyrus City
 
 ### Website :star:
 
