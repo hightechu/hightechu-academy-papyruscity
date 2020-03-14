@@ -10,11 +10,11 @@ HighTechU Group Project
 
 ### Mini Pitch :ghost:
 
-[A website for teens to find books they enjoy and to discuss and recommend books to friends, online or otherwise.]
+A website for teens to find books they enjoy and to discuss and recommend books to friends, online or otherwise.
 
 ### Problem Statment :mega:
 
-[Most book websites have a majority of adult or kid readers, even on books aimed at teens. This website aims to focus on ages 13-20, which are disproportionately under-represented on many other sites.]
+Most book websites have a majority of adult or kid readers, even on books aimed at teens. This website aims to focus on ages 13-20, which are disproportionately under-represented on many other sites.
 
 ### User Stories :snowboarder:
 
