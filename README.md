@@ -28,13 +28,13 @@ HighTechU Group Project
 
 [DELETE ME - ADD YOUR WEBSITE PAGES HERE]
 
-Home Page -> `index.html`
-Login / Register Page -> `login-register.html`
-Book Page -> `boo-page.html`
-Make a Review Page -> `makeareview`
-Search Page -> `search.html`
-Results Page -> `results.html`
-Personal User Page -> `user-page.html`
+* Home Page -> `index.html`
+* Login / Register Page -> `login-register.html`
+* Book Page -> `book-page.html`
+* Make a Review Page -> `makeareview`
+* Search Page -> `search.html`
+* Results Page -> `results.html`
+* Personal User Page -> `user-page.html`
 
 ### Promo :grinning:
 
