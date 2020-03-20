@@ -26,8 +26,6 @@ Most book websites have a majority of adult or kid readers, even on books aimed 
 
 ### Website Pages :speedboat:
 
-[DELETE ME - ADD YOUR WEBSITE PAGES HERE]
-
 * Home Page -> `index.html`
 * Login / Register Page -> `login-register.html`
 * Book Page -> `book-page.html`
